@@ -1,0 +1,56 @@
+
+Clover EFI installer log - Tue Jul 10 11:08:09 CST 2018
+Installer version: v2.4k r4586 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk0
+   1:          Apple_CoreStorage TimeMachine-Brix        999.9 GB   disk0s1
+
+/dev/disk1 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         1.0 TB     disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                 Apple_APFS Container disk3         1.0 TB     disk1s2
+
+/dev/disk2 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         256.1 GB   disk2
+   1:           Windows Recovery                         523.2 MB   disk2s1
+   2:                        EFI NO NAME                 104.9 MB   disk2s2
+   3:         Microsoft Reserved                         16.8 MB    disk2s3
+   4:       Microsoft Basic Data BOOTCAMP                255.4 GB   disk2s4
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +1.0 TB     disk3
+                                 Physical Store disk1s2
+   1:                APFS Volume Macintosh BRIX          249.3 GB   disk3s1
+   2:                APFS Volume macMisc                 488.9 GB   disk3s2
+   3:                APFS Volume Preboot                 21.5 MB    disk3s3
+   4:                APFS Volume Recovery                517.8 MB   disk3s4
+   5:                APFS Volume VM                      2.1 GB     disk3s5
+
+/dev/disk4 (internal, virtual):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:                  Apple_HFS TimeMachine-Brix       +999.5 GB   disk4
+                                 Logical Volume on disk0s1
+                                 5985629F-3225-41A1-8D45-D2754FBA437A
+                                 Unlocked Encrypted
+
+Target volume /Volumes/Macintosh BRIX on disk3 is APFS on physical store disk1s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/Macintosh BRIX/EFIROOTDIR/EFI folder to /Volumes/Macintosh BRIX/EFI-Backups/r4380/2018-07-10-11h08/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
