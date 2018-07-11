@@ -100,7 +100,7 @@ Piker Alpha 有就 CPU 电源管理写了[专用的 SSDT 冷修正档案生成�
 
   - 给 `HWPEnable` 和 `UseARTFrequency` 这两项打钩。
 
-  - CPU Type 應設為 `0x0905`。
+  - CPU Type 应设为 `0x0905`。
 
   - HWPValue 的数值应设为 `0x00002401`（最强效能），该设定适合将 i7-6820HQ 用于桌上型电脑的情形。 
 
